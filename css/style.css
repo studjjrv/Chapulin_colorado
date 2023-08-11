@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Tilt+Neon&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Tilt Neon', cursive;
+    cursor: url('../images/chipote-chillon.png'), pointer;
+
+     
+}
+
+/*EFECTO GLITCH*/
+.imagen{
+    text-align: center; 
+ }
+.imagen:hover{
+
+
+    animation: tiembla 0.1s infinite;
+ 
+  }
+  @keyframes tiembla{
+    0%  { transform:rotateZ(-5deg); }
+    50% { transform:rotateZ( 0deg) scale(.8); }
+    100%{ transform:rotateZ( 5deg); }
+  }
+
+  /*CIERRE EFECTO GLITCH*/
+
+  
+body{
+    background-image:  url("../images/fondo.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgba(0, 0, 0, 0.553);
+
+}
+
+
+.nav-contenedor{
+    width: 80%;
+    margin: auto;
+    overflow:hidden;
+    margin: 20px 20px 20px 20px;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.548);
+    border-bottom: 3px solid #fbf304; 
+  }
+
+section{
+    padding-top: 80px;
+}
+
+#nav-principal:hover {
+    border-radius: 20%;
+    width: auto;
+    height: 30px;
+    padding: 5px 5px 5px 5px;
+    background: #fbf30492;
+  }
+.nav-contenedor ul{
+    display: flex;
+    height: 45px;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 30px 30px 30px;
+    
+}
+.nav-contenedor img{
+    width: 100%;
+    height: 50px;
+    border-radius: 20%;
+    padding: 5px 5px 5px 5px;
+}
+
+.contenedor h1{
+    margin: 30px 30px 30px 30px;
+    font-size: 45px;
+    text-align: left;
+    color: #fbf304;
+}
+.contenedor p{
+    margin: 30px 30px 30px 30px;
+    font-size: 20px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.553);
+    color: #fbf304;
+    padding: 20px 20px 20px 20px;  
+    block-size: 1000px 1000px;
+
+}
+
+
+
+.footer-contenedor ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px; 
+    background-color: rgba(0, 0, 0, 0.553);
+    padding: 5px 5px 5px 5px;
+}
+
+.footer-contenedor ul li a img{
+    border-radius: 50%;
+    background-color: rgba(156, 151, 151, 0.26);
+    padding: 5px 5px 5px 5px;
+    width: 50px;
+    height: 50px;
+}
+.footer-contenedor h2{
+    text-align: right;
+    font-size: 12px;
+    margin-right: 50px;
+}
+
+
+
+
+
+
+
